@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Poppins;
+  src: url(/Gabarito-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.bg-grid {
+  background-color: #010218; /* Dark background */
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-grid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.064) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.064) 1px, transparent 1px);
+  background-size: 50px 50px; /* Adjust grid spacing */
+  pointer-events: none;
+}
+
+` .bg-grid::after {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, #8d05c268, transparent);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(100px);
+  z-index: -1;
+}
