@@ -86,7 +86,7 @@ const Projects = () => {
       </div>
 
       {/* Design Gallery Section */}
-      <div className="mt-24 w-full max-w-6xl">
+      <div className="mt-24 hidden w-full max-w-6xl">
         <motion.h3
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0, transition: { duration: 1.0 } }}
@@ -104,7 +104,7 @@ const Projects = () => {
         </motion.p>
 
         {/* Bento Grid Gallery */}
-        <div className="sm:grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 auto-rows-[150px] gap-4">
+        <div className="sm:grid grid-cols-2 hidden sm:grid-cols-2 md:grid-cols-3 auto-rows-[150px] gap-4">
           {[
             { src: "nike.png", alt: "Nike App", span: "col-span-1 row-span-1" },
             {
