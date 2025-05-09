@@ -7,7 +7,7 @@ import Skills from "./components/Skills";
 
 export default function Home() {
   return (
-    <div className="scroll max-w-screen">
+    <div className="scroll max-w-screen overflow-x-hidden">
       <Hero />
       <About />
       <Services />
